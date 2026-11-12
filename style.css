@@ -1,0 +1,85 @@
+:root { 
+    --orange: #ff7a1f; 
+    --dark: #1d2733; 
+    --bg: #fbfaf7; 
+    --mint: #2ec27e;
+    --line: #362b2b;
+}
+body { 
+    margin: 0; 
+    font-family: "Nunito", system-ui, sans-serif; 
+    background: var(--bg); 
+    color: var(--dark);
+}
+.card {
+    background: white;
+    border: 2px solid var(--line);
+    border-radius: 24px;
+    padding: 24px;
+}
+* { box-sizing: border-box; }
+.top { 
+    padding: 20px 32px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;}
+.circles { 
+    display: flex; 
+    gap: 16px;
+}
+.circle { 
+    width: 72px; 
+    height: 72px; 
+    border-radius: 50%; 
+    border: 4px dashed white; 
+    display: grid; 
+    place-items: center;}
+.circle.done { 
+    background: white; 
+    color: var(--mint); 
+    border-style: solid;
+}
+main { 
+    max-width: 720px; 
+    margin: 0 auto; 
+    padding: 0 16px; 
+    display: grid; 
+    gap: 24px;}
+@media (max-width: 600px) { 
+    .hero { padding: 24px; } 
+    .circle { width: 56px; height: 56px; }
+}
+.hero {
+    background-color: var(--orange);
+    color: white;
+    padding: 32px;
+    border-radius: 24px;
+}
+.logo {
+    color: var(--orange);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    gap: 24px;
+}
+
+nav a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+}
+button {
+    background: var(--orange);
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 32px;
+}
